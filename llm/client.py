@@ -1,27 +1,56 @@
-import requests
 import json
-from config.llm_config import HEADERS, HF_ENDPOINT
+from huggingface_hub import InferenceClient
+from config.llm_config import HF_API_TOKEN, HF_MODEL
+from utils.retry import retry
 
 
 class LLMClient:
+    _client = InferenceClient(api_key=HF_API_TOKEN)
+
     @staticmethod
-    def call(prompt: str) -> dict:
-        payload = {
-            "inputs": prompt,
-            "parameters": {
-                "temperature": 0.2,
-                "max_new_tokens": 1200
-            }
-        }
+    def parse_json_safe(content: str):
+        """
+        Parse a complete JSON value.
+        If JSON is truncated, raise a clear error.
+        """
+        content = content.strip()
 
+        # Quick truncation detection
+        if content.count("{") > content.count("}") or content.count("[") > content.count("]"):
+            raise ValueError("Truncated JSON detected")
 
-        response = requests.post(HF_ENDPOINT, headers=HEADERS, json=payload)
-        response.raise_for_status()
+        decoder = json.JSONDecoder()
+        obj, _ = decoder.raw_decode(content)
+        return obj
 
+    @staticmethod
+    def call(prompt: str):
+        def _call_once():
+            messages = [
+                {
+                    "role": "system",
+                    "content": (
+                        "You MUST return ONLY valid JSON.\n"
+                        "Do NOT explain.\n"
+                        "Do NOT use markdown.\n"
+                        "Return a SINGLE JSON array or object."
+                    )
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
 
-        text = response.json()[0]["generated_text"]
-        start = text.find("{")
-        end = text.rfind("}") + 1
+            response = LLMClient._client.chat.completions.create(
+                model=HF_MODEL,
+                messages=messages,
+                temperature=0.1,
+                max_tokens=2000,   # 🔑 increased
+                top_p=0.9
+            )
 
+            content = response.choices[0].message.content
+            return LLMClient.parse_json_safe(content)
 
-        return json.loads(text[start:end])
+        return retry(_call_once, attempts=3)

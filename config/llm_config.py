@@ -1,16 +1,10 @@
 import os
 from dotenv import load_dotenv
 
+load_dotenv()  # 👈 THIS LINE
 
-load_dotenv()
-
-
-HF_API_KEY = os.getenv("HF_API_KEY")
+HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 HF_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
-HF_ENDPOINT = f"https://api-inference.huggingface.co/models/{HF_MODEL}"
 
-
-HEADERS = {
-"Authorization": f"Bearer {HF_API_KEY}",
-"Content-Type": "application/json"
-}
+if not HF_API_TOKEN:
+    raise RuntimeError("HF_API_TOKEN not set in environment")
