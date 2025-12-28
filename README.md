@@ -1,5 +1,4 @@
-Here is **one complete, ready-to-use README.md script**.
-You can **copy–paste this directly into `README.md`** with no edits needed.
+
 
 ---
 
