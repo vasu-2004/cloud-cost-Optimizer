@@ -1,4 +1,3 @@
-# prompts.py
 
 PROFILE_PROMPT = """
 You are an expert cloud architect.

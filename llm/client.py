@@ -46,7 +46,7 @@ class LLMClient:
                 model=HF_MODEL,
                 messages=messages,
                 temperature=0.1,
-                max_tokens=2000,   # 🔑 increased
+                max_tokens=2000,   
                 top_p=0.9
             )
 
