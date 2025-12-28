@@ -1,0 +1,210 @@
+{
+  "project_name": "Cloud-Hosted SaaS Application",
+  "analysis": {
+    "total_monthly_cost": 720000,
+    "budget": 500000,
+    "budget_variance": 220000,
+    "service_costs": {
+      "Compute": 432000,
+      "Database": 87500,
+      "Storage": 42500,
+      "Networking": 21000,
+      "Monitoring": 5200
+    },
+    "high_cost_services": {
+      "Compute": 432000,
+      "Database": 87500
+    },
+    "is_over_budget": true
+  },
+  "recommendations": [
+    {
+      "title": "Migrate to Free-Tier PostgreSQL",
+      "service": "Database",
+      "current_cost": 87500,
+      "potential_savings": 43750,
+      "recommendation_type": "Cost Optimization",
+      "description": "Migrate to free-tier PostgreSQL to reduce database costs.",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Stop using paid PostgreSQL instances",
+        "Migrate to free-tier PostgreSQL"
+      ],
+      "cloud_providers": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    {
+      "title": "Optimize Compute Resource Utilization",
+      "service": "Compute",
+      "current_cost": 432000,
+      "potential_savings": 216000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Optimize compute resource utilization to reduce instance hours.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Monitor and analyze compute resource utilization",
+        "Optimize instance sizes and numbers"
+      ],
+      "cloud_providers": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    {
+      "title": "Use Open-Source Object Storage",
+      "service": "Storage",
+      "current_cost": 42500,
+      "potential_savings": 21250,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use open-source object storage to reduce storage costs.",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Stop using paid object storage",
+        "Migrate to open-source object storage"
+      ],
+      "cloud_providers": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    {
+      "title": "Implement Data Transfer Optimization",
+      "service": "Networking",
+      "current_cost": 21000,
+      "potential_savings": 10500,
+      "recommendation_type": "Cost Optimization",
+      "description": "Implement data transfer optimization to reduce data transfer costs.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Monitor and analyze data transfer patterns",
+        "Optimize data transfer routes and protocols"
+      ],
+      "cloud_providers": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    {
+      "title": "Use Free-Tier Monitoring",
+      "service": "Monitoring",
+      "current_cost": 5200,
+      "potential_savings": 2600,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use free-tier monitoring to reduce monitoring costs.",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Stop using paid monitoring",
+        "Migrate to free-tier monitoring"
+      ],
+      "cloud_providers": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    {
+      "title": "Rightsize Compute Instances",
+      "service": "Compute",
+      "current_cost": 432000,
+      "potential_savings": 216000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Rightsizing compute instances to reduce costs.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Monitor and analyze compute resource utilization",
+        "Rightsizing compute instances"
+      ],
+      "cloud_providers": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    {
+      "title": "Use Azure Reserved Instances",
+      "service": "Compute",
+      "current_cost": 432000,
+      "potential_savings": 216000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use Azure Reserved Instances to reduce compute costs.",
+      "implementation_effort": "high",
+      "risk_level": "high",
+      "steps": [
+        "Purchase Azure Reserved Instances",
+        "Apply Reserved Instances to compute resources"
+      ],
+      "cloud_providers": [
+        "Azure"
+      ]
+    },
+    {
+      "title": "Use GCP Spot Instances",
+      "service": "Compute",
+      "current_cost": 432000,
+      "potential_savings": 216000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use GCP Spot Instances to reduce compute costs.",
+      "implementation_effort": "high",
+      "risk_level": "high",
+      "steps": [
+        "Purchase GCP Spot Instances",
+        "Apply Spot Instances to compute resources"
+      ],
+      "cloud_providers": [
+        "GCP"
+      ]
+    },
+    {
+      "title": "Use AWS Reserved Instances",
+      "service": "Compute",
+      "current_cost": 432000,
+      "potential_savings": 216000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use AWS Reserved Instances to reduce compute costs.",
+      "implementation_effort": "high",
+      "risk_level": "high",
+      "steps": [
+        "Purchase AWS Reserved Instances",
+        "Apply Reserved Instances to compute resources"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use Azure Hybrid Benefit",
+      "service": "Compute",
+      "current_cost": 432000,
+      "potential_savings": 216000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use Azure Hybrid Benefit to reduce compute costs.",
+      "implementation_effort": "high",
+      "risk_level": "high",
+      "steps": [
+        "Purchase Azure Hybrid Benefit",
+        "Apply Hybrid Benefit to compute resources"
+      ],
+      "cloud_providers": [
+        "Azure"
+      ]
+    }
+  ],
+  "summary": {
+    "total_potential_savings": 1000000,
+    "savings_percentage": 66.67,
+    "recommendations_count": 9,
+    "high_impact_recommendations": 6
+  }
+}

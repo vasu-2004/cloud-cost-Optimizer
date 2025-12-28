@@ -1,0 +1,224 @@
+{
+  "project_name": "FoodDeliveryApp",
+  "analysis": {
+    "total_monthly_cost": 542400,
+    "budget": 5000000,
+    "budget_variance": 957600,
+    "service_costs": {
+      "Compute": 396000,
+      "Database": 44000,
+      "Storage": 104000,
+      "Networking": 2100,
+      "Monitoring": 40000
+    },
+    "high_cost_services": {
+      "Compute": 396000,
+      "Storage": 104000
+    },
+    "is_over_budget": true
+  },
+  "recommendations": [
+    {
+      "title": "Migrate to Free-Tier MongoDB",
+      "service": "Database",
+      "current_cost": 44000,
+      "potential_savings": 22000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Migrate to free-tier MongoDB to reduce database costs",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Stop using paid MongoDB instances",
+        "Migrate to free-tier MongoDB",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "MongoDB"
+      ]
+    },
+    {
+      "title": "Optimize Compute Instance Types",
+      "service": "Compute",
+      "current_cost": 396000,
+      "potential_savings": 198000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Optimize compute instance types to reduce costs",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Analyze current instance types and usage",
+        "Optimize instance types for better pricing",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use Azure Storage for Cost Savings",
+      "service": "Storage",
+      "current_cost": 104000,
+      "potential_savings": 52000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use Azure Storage for cost savings",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Stop using S3 storage",
+        "Migrate to Azure Storage",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "Azure"
+      ]
+    },
+    {
+      "title": "Implement CloudWatch Log Retention",
+      "service": "Monitoring",
+      "current_cost": 40000,
+      "potential_savings": 20000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Implement CloudWatch Log Retention to reduce log costs",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Implement log retention policies",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use Open-Source Alternatives for Networking",
+      "service": "Networking",
+      "current_cost": 2100,
+      "potential_savings": 1050,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use open-source alternatives for networking to reduce costs",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Stop using paid networking services",
+        "Migrate to open-source alternatives",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "Open-Source"
+      ]
+    },
+    {
+      "title": "Rightsize Compute Instances",
+      "service": "Compute",
+      "current_cost": 396000,
+      "potential_savings": 198000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Rightsize compute instances to reduce costs",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Analyze current instance types and usage",
+        "Rightsize instances for better pricing",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use GCP Storage for Cost Savings",
+      "service": "Storage",
+      "current_cost": 104000,
+      "potential_savings": 52000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use GCP Storage for cost savings",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Stop using S3 storage",
+        "Migrate to GCP Storage",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "GCP"
+      ]
+    },
+    {
+      "title": "Implement Data Transfer Optimization",
+      "service": "Networking",
+      "current_cost": 2100,
+      "potential_savings": 1050,
+      "recommendation_type": "Cost Optimization",
+      "description": "Implement data transfer optimization to reduce costs",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Implement data transfer optimization policies",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use Free-Tier AWS Services",
+      "service": "Compute",
+      "current_cost": 396000,
+      "potential_savings": 198000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use free-tier AWS services to reduce costs",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Stop using paid AWS services",
+        "Migrate to free-tier services",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Optimize Database Instance Types",
+      "service": "Database",
+      "current_cost": 44000,
+      "potential_savings": 22000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Optimize database instance types to reduce costs",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Analyze current instance types and usage",
+        "Optimize instance types for better pricing",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "MongoDB"
+      ]
+    },
+    {
+      "title": "Use Azure Monitoring for Cost Savings",
+      "service": "Monitoring",
+      "current_cost": 40000,
+      "potential_savings": 20000,
+      "recommendation_type": "Cost Optimization",
+      "description": "Use Azure Monitoring for cost savings",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Stop using CloudWatch logs",
+        "Migrate to Azure Monitoring",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "Azure"
+      ]
+    }
+  ],
+  "summary": {
+    "total_potential_savings": 1012000,
+    "savings_percentage": 20.24,
+    "recommendations_count": 12,
+    "high_impact_recommendations": 6
+  }
+}

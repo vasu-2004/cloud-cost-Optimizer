@@ -1,0 +1,222 @@
+[
+  {
+    "month": "2023-01",
+    "service": "Compute",
+    "resource_id": "i-0123456789abcdef0",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 720,
+    "unit": "hours",
+    "cost_inr": 150000,
+    "desc": "c5.xlarge instances for food delivery app"
+  },
+  {
+    "month": "2023-01",
+    "service": "Database",
+    "resource_id": "mongodb-0123456789abcdef0",
+    "region": "ap-southeast-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 512,
+    "unit": "GB",
+    "cost_inr": 12000,
+    "desc": "MongoDB storage for food delivery app"
+  },
+  {
+    "month": "2023-01",
+    "service": "Storage",
+    "resource_id": "s3-bucket-0123456789abcdef0",
+    "region": "eu-central-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 1024,
+    "unit": "GB",
+    "cost_inr": 24000,
+    "desc": "S3 storage for food delivery app"
+  },
+  {
+    "month": "2023-01",
+    "service": "Networking",
+    "resource_id": "vpc-0123456789abcdef0",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 100,
+    "unit": "GB",
+    "cost_inr": 500,
+    "desc": "Data transfer out for food delivery app"
+  },
+  {
+    "month": "2023-01",
+    "service": "Monitoring",
+    "resource_id": "cloudwatch-0123456789abcdef0",
+    "region": "ap-southeast-1",
+    "usage_type": "logs",
+    "usage_quantity": 100000,
+    "unit": "log-entries",
+    "cost_inr": 10000,
+    "desc": "CloudWatch logs for food delivery app"
+  },
+  {
+    "month": "2023-02",
+    "service": "Compute",
+    "resource_id": "i-0123456789abcdef1",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 800,
+    "unit": "hours",
+    "cost_inr": 120000,
+    "desc": "c5.xlarge instances for food delivery app"
+  },
+  {
+    "month": "2023-02",
+    "service": "Database",
+    "resource_id": "mongodb-0123456789abcdef1",
+    "region": "ap-southeast-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 768,
+    "unit": "GB",
+    "cost_inr": 11000,
+    "desc": "MongoDB storage for food delivery app"
+  },
+  {
+    "month": "2023-02",
+    "service": "Storage",
+    "resource_id": "s3-bucket-0123456789abcdef1",
+    "region": "eu-central-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 1152,
+    "unit": "GB",
+    "cost_inr": 28000,
+    "desc": "S3 storage for food delivery app"
+  },
+  {
+    "month": "2023-02",
+    "service": "Networking",
+    "resource_id": "vpc-0123456789abcdef1",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 120,
+    "unit": "GB",
+    "cost_inr": 600,
+    "desc": "Data transfer out for food delivery app"
+  },
+  {
+    "month": "2023-02",
+    "service": "Monitoring",
+    "resource_id": "cloudwatch-0123456789abcdef1",
+    "region": "ap-southeast-1",
+    "usage_type": "logs",
+    "usage_quantity": 120000,
+    "unit": "log-entries",
+    "cost_inr": 12000,
+    "desc": "CloudWatch logs for food delivery app"
+  },
+  {
+    "month": "2023-03",
+    "service": "Compute",
+    "resource_id": "i-0123456789abcdef2",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 960,
+    "unit": "hours",
+    "cost_inr": 144000,
+    "desc": "c5.xlarge instances for food delivery app"
+  },
+  {
+    "month": "2023-03",
+    "service": "Database",
+    "resource_id": "mongodb-0123456789abcdef2",
+    "region": "ap-southeast-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 896,
+    "unit": "GB",
+    "cost_inr": 11000,
+    "desc": "MongoDB storage for food delivery app"
+  },
+  {
+    "month": "2023-03",
+    "service": "Storage",
+    "resource_id": "s3-bucket-0123456789abcdef2",
+    "region": "eu-central-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 1280,
+    "unit": "GB",
+    "cost_inr": 32000,
+    "desc": "S3 storage for food delivery app"
+  },
+  {
+    "month": "2023-03",
+    "service": "Networking",
+    "resource_id": "vpc-0123456789abcdef2",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 140,
+    "unit": "GB",
+    "cost_inr": 700,
+    "desc": "Data transfer out for food delivery app"
+  },
+  {
+    "month": "2023-03",
+    "service": "Monitoring",
+    "resource_id": "cloudwatch-0123456789abcdef2",
+    "region": "ap-southeast-1",
+    "usage_type": "logs",
+    "usage_quantity": 140000,
+    "unit": "log-entries",
+    "cost_inr": 14000,
+    "desc": "CloudWatch logs for food delivery app"
+  },
+  {
+    "month": "2023-04",
+    "service": "Compute",
+    "resource_id": "i-0123456789abcdef3",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 1120,
+    "unit": "hours",
+    "cost_inr": 134400,
+    "desc": "c5.xlarge instances for food delivery app"
+  },
+  {
+    "month": "2023-04",
+    "service": "Database",
+    "resource_id": "mongodb-0123456789abcdef3",
+    "region": "ap-southeast-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 1024,
+    "unit": "GB",
+    "cost_inr": 12000,
+    "desc": "MongoDB storage for food delivery app"
+  },
+  {
+    "month": "2023-04",
+    "service": "Storage",
+    "resource_id": "s3-bucket-0123456789abcdef3",
+    "region": "eu-central-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 1536,
+    "unit": "GB",
+    "cost_inr": 38400,
+    "desc": "S3 storage for food delivery app"
+  },
+  {
+    "month": "2023-04",
+    "service": "Networking",
+    "resource_id": "vpc-0123456789abcdef3",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 160,
+    "unit": "GB",
+    "cost_inr": 800,
+    "desc": "Data transfer out for food delivery app"
+  },
+  {
+    "month": "2023-04",
+    "service": "Monitoring",
+    "resource_id": "cloudwatch-0123456789abcdef3",
+    "region": "ap-southeast-1",
+    "usage_type": "logs",
+    "usage_quantity": 160000,
+    "unit": "log-entries",
+    "cost_inr": 16000,
+    "desc": "CloudWatch logs for food delivery app"
+  }
+]

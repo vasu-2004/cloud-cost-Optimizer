@@ -1,0 +1,178 @@
+[
+  {
+    "month": "2023-01",
+    "service": "Compute",
+    "resource_id": "i-1234567890abcdef0",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 720,
+    "unit": "hours",
+    "cost_inr": 150000,
+    "desc": "c5.xlarge instances for backend servers"
+  },
+  {
+    "month": "2023-01",
+    "service": "Database",
+    "resource_id": "db-1234567890abcdef0",
+    "region": "ap-southeast-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 500,
+    "unit": "GB",
+    "cost_inr": 25000,
+    "desc": "PostgreSQL database storage"
+  },
+  {
+    "month": "2023-01",
+    "service": "Storage",
+    "resource_id": "s3-bucket-1234567890abcdef0",
+    "region": "eu-central-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 2000,
+    "unit": "GB",
+    "cost_inr": 10000,
+    "desc": "Object storage for static assets"
+  },
+  {
+    "month": "2023-01",
+    "service": "Networking",
+    "resource_id": "vpc-1234567890abcdef0",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 100,
+    "unit": "GB",
+    "cost_inr": 5000,
+    "desc": "Data transfer out to users"
+  },
+  {
+    "month": "2023-01",
+    "service": "Monitoring",
+    "resource_id": "alarm-1234567890abcdef0",
+    "region": "ap-southeast-1",
+    "usage_type": "alarm-count",
+    "usage_quantity": 50,
+    "unit": "count",
+    "cost_inr": 1000,
+    "desc": "Basic monitoring and alerting"
+  },
+  {
+    "month": "2023-02",
+    "service": "Compute",
+    "resource_id": "i-2345678901cdef0",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 840,
+    "unit": "hours",
+    "cost_inr": 168000,
+    "desc": "c5.xlarge instances for backend servers"
+  },
+  {
+    "month": "2023-02",
+    "service": "Database",
+    "resource_id": "db-2345678901cdef0",
+    "region": "ap-southeast-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 550,
+    "unit": "GB",
+    "cost_inr": 27500,
+    "desc": "PostgreSQL database storage"
+  },
+  {
+    "month": "2023-02",
+    "service": "Storage",
+    "resource_id": "s3-bucket-2345678901cdef0",
+    "region": "eu-central-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 2200,
+    "unit": "GB",
+    "cost_inr": 11000,
+    "desc": "Object storage for static assets"
+  },
+  {
+    "month": "2023-02",
+    "service": "Networking",
+    "resource_id": "vpc-2345678901cdef0",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 120,
+    "unit": "GB",
+    "cost_inr": 6000,
+    "desc": "Data transfer out to users"
+  },
+  {
+    "month": "2023-02",
+    "service": "Monitoring",
+    "resource_id": "alarm-2345678901cdef0",
+    "region": "ap-southeast-1",
+    "usage_type": "alarm-count",
+    "usage_quantity": 60,
+    "unit": "count",
+    "cost_inr": 1200,
+    "desc": "Basic monitoring and alerting"
+  },
+  {
+    "month": "2023-03",
+    "service": "Compute",
+    "resource_id": "i-3456789012def0",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 960,
+    "unit": "hours",
+    "cost_inr": 192000,
+    "desc": "c5.xlarge instances for backend servers"
+  },
+  {
+    "month": "2023-03",
+    "service": "Database",
+    "resource_id": "db-3456789012def0",
+    "region": "ap-southeast-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 600,
+    "unit": "GB",
+    "cost_inr": 30000,
+    "desc": "PostgreSQL database storage"
+  },
+  {
+    "month": "2023-03",
+    "service": "Storage",
+    "resource_id": "s3-bucket-3456789012def0",
+    "region": "eu-central-1",
+    "usage_type": "storage-gb",
+    "usage_quantity": 2500,
+    "unit": "GB",
+    "cost_inr": 12500,
+    "desc": "Object storage for static assets"
+  },
+  {
+    "month": "2023-03",
+    "service": "Networking",
+    "resource_id": "vpc-3456789012def0",
+    "region": "ap-south-1",
+    "usage_type": "data-transfer-out-gb",
+    "usage_quantity": 180,
+    "unit": "GB",
+    "cost_inr": 9000,
+    "desc": "Data transfer out to users"
+  },
+  {
+    "month": "2023-03",
+    "service": "Monitoring",
+    "resource_id": "alarm-3456789012def0",
+    "region": "ap-southeast-1",
+    "usage_type": "alarm-count",
+    "usage_quantity": 80,
+    "unit": "count",
+    "cost_inr": 1600,
+    "desc": "Basic monitoring and alerting"
+  },
+  {
+    "month": "2023-04",
+    "service": "Compute",
+    "resource_id": "i-4567890123ef0",
+    "region": "ap-south-1",
+    "usage_type": "instance-hours",
+    "usage_quantity": 1080,
+    "unit": "hours",
+    "cost_inr": 216000,
+    "desc": "c5.xlarge instances for backend servers"
+  }
+]

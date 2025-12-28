@@ -1,0 +1,19 @@
+{
+  "name": "Cloud-Hosted SaaS Application",
+  "budget_inr_per_month": 500000,
+  "description": "A cloud-hosted SaaS application for small and medium businesses to manage inventory, sales, and supplier records.",
+  "tech_stack": {
+    "backend": "Python FastAPI",
+    "frontend": "React",
+    "database": "PostgreSQL",
+    "storage": "Object Storage (e.g. AWS S3)",
+    "cloud_provider": "Public Cloud (e.g. AWS, Azure, Google Cloud)",
+    "monitoring": "Basic Monitoring and Alerting"
+  },
+  "non_functional_requirements": [
+    "Scalability",
+    "High Availability",
+    "Cost Efficiency",
+    "User Load: 3000-5000 active users per month"
+  ]
+}

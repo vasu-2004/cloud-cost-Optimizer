@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # 👈 THIS LINE
+load_dotenv()  
 
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 HF_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
