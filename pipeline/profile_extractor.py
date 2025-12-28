@@ -7,10 +7,11 @@ from config.schemas import ProjectProfile
 
 class ProfileExtractor:
     def run(self, description: str):
+        save_json("data/project_description.txt", description)
         prompt = PROFILE_PROMPT.format(description=description)
         data = LLMClient.call(prompt)
-
-        # 🔧 AUTO-REPAIR: model returned only NFR list
+        
+        
         if isinstance(data, list):
             data = {
                 "name": "Inventory Management SaaS",
